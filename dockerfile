@@ -7,8 +7,7 @@ ENV FASTDFS_PATH=/fastDFS \
 
 #get all the dependences
 RUN yum update && yum install -y \
-    gcc gcc-c++ cmake automake autoconf libtool make git 
-
+    gcc gcc-c++ cmake automake autoconf libtool make git \
  && rm -rf /var/lib/apt/lists/* \
  && yum clean
 
